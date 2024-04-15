@@ -10,7 +10,8 @@ async function MoviePage({ params }) {
   );
 
   const movie = await res.json();
-  console.log(movie);
+  // console.log(movie);
+  console.log(movie.id);
 
   return (
     <div className="w-full">
@@ -22,6 +23,7 @@ async function MoviePage({ params }) {
           width={500}
           height={300}
           className="rounded-lg "
+          alt="movie"
         ></Image>
         <div className="p-2">
           <h2 className="text-xl font-semibold mb-3 ">
